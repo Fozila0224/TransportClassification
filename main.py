@@ -5,7 +5,7 @@ import plotly.express as px
 import platform
 plt = platform.system()
 if plt == 'Linux': pathlib.WindowsPath = pathlib.PosixPath
-
+torch.classes.__path__ = []
 st.title("Transportni klassifikatsiya qiluvchi model")
 
 file = st.file_uploader('Rasm yuklash', type=['png', 'jpeg', 'jpg', 'gif', 'svg'])
